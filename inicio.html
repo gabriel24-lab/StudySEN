@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Inicio - StudySEN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/Frontend/pagina-principal/style.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="nav-logo">
+        </div>
+        <span class="brand-name">StudySEN</span>
+      </div>
+
+      <nav class="main-nav" aria-label="Navegación principal" id="mainNav">
+        <a href="#inicio" class="nav-link" data-section="inicio" data-color="#1e6fff">Inicio</a>
+        <a href="#areas" class="nav-link" data-section="areas" data-color="#0b66ff">Áreas</a>
+        <a href="#preguntas" class="nav-link" data-section="preguntas" data-color="#0aa37a">Preguntas</a>
+        <a href="#sobre" class="nav-link" data-section="sobre" data-color="#6b21a8">Sobre nosotros</a>
+      </nav>
+
+      <div class="actions">
+        <a class="btn btn-ghost" href="/Frontend/Login/login.html" id="btn-join">Inicia sesión</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container hero-inner">
+      <section class="hero-left" id="inicio" data-color="#1e6fff">
+        <h1 class="hero-title">STUDYSEN</h1>
+        <p class="hero-sub">Formación que inspira, herramientas que ayudan</p>
+
+        <p class="hero-text">
+          Bienvenidos a nuestra red social diseñada específicamente para los aprendices del SENA.
+          Nuestro objetivo es crear un espacio donde puedas conectarte con otros aprendices, compartir conocimientos y resolver dudas sobre las clases que has tomado.
+          Nuestra plataforma te permitirá interactuar con otros estudiantes, obtener apoyo y mejorar tu experiencia de aprendizaje.
+        </p>
+
+        <div class="hero-cta">
+          <button class="btn btn-primary" id="btn-more">Ver más</button>
+        </div>
+      </section>
+
+      <aside class="hero-right" id="heroRight">
+        <div class="hero-image">
+          <img src="/Frontend/Photos/Sin título.png" alt="Imagen lateral" />
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- NUEVA SECCIÓN: AREAS -->
+  <section class="areas-section" id="areas" data-color="#0b66ff">
+    <div class="container">
+      <div class="areas-header">
+        <h2>Áreas</h2>
+        <div class="areas-filter">
+          <label for="areasSelect">Áreas</label>
+          <select id="areasSelect" aria-label="Seleccionar área">
+            <option value="all">Todas</option>
+            <option value="sistemas">Sistemas</option>
+            <option value="contabilidad">Contabilidad</option>
+            <option value="administracion">Administración</option>
+            <option value="hoteleria">Hoteleria</option>
+            <option value="ambiental">Ambiental</option>
+            <option value="artesania">Artesanias</option>
+            <option value="infraestructura">Infraestructura</option>
+            <option value="mineria">Mineria</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="areas-grid" id="areasGrid">
+        <!-- Card 1 -->
+        <article class="area-card" data-area="sistemas">
+          <div class="area-icon">🖥️</div>
+          <h3 class="area-title">Sistemas</h3>
+          <p class="area-desc">Un sistema informático es un sistema que permite almacenar y procesar información.</p>
+          <a class="area-link" href="#">Ver más</a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="area-card" data-area="contabilidad">
+          <div class="area-icon">📊</div>
+          <h3 class="area-title">Contabilidad</h3>
+          <p class="area-desc">La contabilidad estudia, mide y registra el patrimonio y la situación económica de una entidad.</p>
+          <a class="area-link" href="#">Ver más</a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="area-card" data-area="administracion">
+          <div class="area-icon">📁</div>
+          <h3 class="area-title">Administración</h3>
+          <p class="area-desc">La administración organiza y dirige el trabajo individual y colectivo para lograr objetivos.</p>
+          <a class="area-link" href="#">Ver más</a>
+        </article>
+
+        <article class="area-card" data-area="hoteleria">
+          <div class="area-icon">🏨</div>
+          <h3 class="area-title">Hoteleria</h3>
+          <p class="area-desc">Forma profesionales en atención al cliente y gestión de servicios turísticos, enfocados en brindar experiencias de calidad en hoteles y eventos.</p>
+          <a class="area-link" href="#">Ver más</a>
+        </article>
+
+        <article class="area-card" data-area="ambiental">
+          <div class="area-icon">🌏</div>
+          <h3 class="area-title">Ambiental</h3>
+          <p class="area-desc">Capacita en el cuidado del medio ambiente, promoviendo la sostenibilidad y la gestión responsable de los recursos naturales.</p>
+          <a class="area-link" href="#">Ver más</a>
+        </article>
+
+        <article class="area-card" data-area="artesania">
+          <div class="area-icon">🗿</div>
+          <h3 class="area-title">Artesanias</h3>
+          <p class="area-desc">Desarrolla habilidades creativas para diseñar y elaborar productos artesanales, fomentando la cultura y el emprendimiento.</p>
+          <a class="area-link" href="#">Ver más</a>
+        </article>
+
+        <article class="area-card" data-area="infraestructura">
+          <div class="area-icon">🏛️</div>
+          <h3 class="area-title">Infraestructura</h3>
+          <p class="area-desc">Prepara en construcción y mantenimiento de obras civiles, aplicando normas técnicas y conocimientos estructurales.</p>
+          <a class="area-link" href="#">Ver más</a>
+        </article>
+
+        <article class="area-card" data-area="mineria">
+          <div class="area-icon">⛏️</div>
+          <h3 class="area-title">Mineria</h3>
+          <p class="area-desc">Forma en exploración y extracción de minerales, con énfasis en seguridad y responsabilidad ambiental.</p>
+          <a class="area-link" href="#">Ver más</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Espacio para futuras secciones -->
+  <section class="questions-section" id="preguntas" data-color="#0aa37a">
+  <div class="container questions-inner">
+    <div class="questions-left">
+      <div class="questions-search">
+        <input id="qSearch" type="search" placeholder="¿Cuál es tu pregunta?" aria-label="Buscar preguntas" />
+        <button id="qAsk" class="btn btn-primary">Preguntar</button>
+      </div>
+
+      <div class="questions-categories" id="qCategories" role="tablist" aria-label="Categorías">
+        <button class="chip active" data-area="all">Todas</button>
+        <button class="chip" data-area="sistemas">Sistemas</button>
+        <button class="chip" data-area="contabilidad">Contabilidad</button>
+        <button class="chip" data-area="administracion">Administración</button>
+        <button class="chip" data-area="hoteleria">Hoteleria</button>
+        <button class="chip" data-area="ambiental">Ambiental</button>
+        <button class="chip" data-area="biotecnologia">Biotecnologia</button>
+        <button class="chip" data-area="construccion">Construcción</button>
+        <button class="chip" data-area="energia-electrica">Energía eléctrica</button>
+        <button class="chip" data-area="artes-graficas">Artes graficas</button>
+        <button class="chip" data-area="finanzas">Finanzas</button>
+      </div>
+
+      <div class="questions-list" id="questionsList" aria-live="polite">
+        <!-- Las preguntas se inyectan por JS -->
+      </div>
+    </div>
+
+    <aside class="questions-right" aria-label="Noticias y novedades">
+      <div class="news-header">
+        <h3>Noticias</h3>
+        <a href="#" class="link-muted">Ver todas</a>
+      </div>
+
+      <div class="news-list" id="newsList">
+        <!-- Noticias inyectadas por JS -->
+      </div>
+
+      <div class="news-footer">
+        <small class="muted">Última actualización: <span id="newsTime"></span></small>
+      </div>
+    </aside>
+  </div>
+</section>
+
+  <!-- SOBRE NOSOTROS -->
+<section class="about-section" id="sobre" data-color="#6b21a8">
+  <div class="container about-inner">
+    <div class="about-left">
+      <h2 class="about-title">¿En qué te puede ayudar?</h2>
+      <p class="about-text">
+        <strong>StudySEN</strong> es una plataforma creada para apoyar a los aprendices del SENA,
+        facilitando la retroalimentación en competencias, el intercambio de conocimientos y la resolución
+        de dudas de forma práctica y accesible.
+      </p>
+
+      <div class="about-cards">
+        <article class="about-card">
+          <div class="about-icon">🎯</div>
+          <div class="about-content">
+            <h3 class="card-title">Objetivo</h3>
+            <p class="card-desc">Brindar apoyo práctico en competencias técnicas y tecnológicas, tanto virtual como presencial.</p>
+          </div>
+        </article>
+
+        <article class="about-card">
+          <div class="about-icon">🤝</div>
+          <div class="about-content">
+            <h3 class="card-title">Comunidad</h3>
+            <p class="card-desc">Conectar aprendices para compartir recursos, resolver dudas y colaborar en proyectos.</p>
+          </div>
+        </article>
+
+        <article class="about-card">
+          <div class="about-icon">📚</div>
+          <div class="about-content">
+            <h3 class="card-title">Recursos</h3>
+            <p class="card-desc">Guías, ejercicios y ejemplos prácticos para reforzar lo aprendido en clase.</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="about-cta">
+        <button class="btn btn-primary" id="btn-join-about">Únete ahora</button>
+        <a class="link-muted" href="#areas">Explorar áreas</a>
+      </div>
+    </div>
+
+    <aside class="about-right">
+      <div class="about-media">
+        <img src="https://imagenes2.eltiempo.com/files/image_1200_535/uploads/2026/01/22/697236cb1cb6f.jpeg" alt="Ilustración sobre StudySEN" id="aboutImage" />
+      </div>
+
+      <div class="team">
+        <h4>Equipo</h4>
+        <ul class="team-list">
+          <li><strong>Gabriel</strong> — Desarrollo</li>
+          <li><strong>Elien</strong> — Diseño</li>
+          <li><strong>Keilys</strong> — Diseño</li>
+          <li><strong>Cristina</strong> — Diseño</li>
+          <li><strong>Ana</strong> — Base de datos</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <!-- Columna 1: Marca -->
+    <div class="footer-brand">
+      <h3>StudySEN</h3>
+      <p>Formación que inspira, herramientas que ayudan.</p>
+    </div>
+
+    <!-- Columna 2: Enlaces rápidos -->
+    <div class="footer-links">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#areas">Áreas</a></li>
+        <li><a href="#preguntas">Preguntas</a></li>
+        <li><a href="#sobre">Sobre nosotros</a></li>
+        <li><a href="/Frontend/Registrer/register.html">Registrarse</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Contacto -->
+    <div class="footer-contact">
+      <h4>Contacto</h4>
+      <ul>
+        <li>Email: <a href="mailto:info@studysen.com">info@studysen.com</a></li>
+        <li>Tel: +57 300 000 0000</li>
+        <li>Valledupar, Cesar, Colombia</li>
+      </ul>
+    </div>
+
+    <!-- Columna 4: Redes sociales -->
+    <div class="footer-social">
+      <h4>Síguenos</h4>
+      <div class="social-icons">
+        <a href="facebook.com"><span>🌐</span> Facebook</a>
+        <a href="instagram.com"><span>📸</span> Instagram</a>
+        <a href="x.com"><span>🐦</span> Twitter</a>
+        <a href="linkedin.com"><span>💼</span> LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <small>© 2026 StudySEN. Todos los derechos reservados.</small>
+  </div>
+</footer>
+
+  <script src="/Frontend/pagina-principal/scriptt.js"></script>
+</body>
+</html>
